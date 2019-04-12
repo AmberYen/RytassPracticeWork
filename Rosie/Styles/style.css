@@ -1,0 +1,83 @@
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo{
+  width: 300px;
+}
+
+.bg{
+  position: fixed;
+  background: #FFFFFF url(../Images/theater.jpeg) center no-repeat;
+              /* color image position repeat */
+  background-size: 1280px 700px;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+
+.content{
+  position:relative;
+  display: flex;
+  flex-flow: column wrap;
+            /* direction wrap */
+  padding: 50px 50px 10px 50px;
+  top: 85px;
+  width: 420px;
+  height: 594px;
+  background-color: #FFFFFF;
+  margin:0 auto;
+  text-align:center;
+}
+
+h1{
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  font-weight: normal;
+  margin-bottom: 70px;
+}
+
+.formGroup {
+  line-height: 50px;
+}
+
+input { /* 無法同時選取 .account, .passowrd */
+  width: 240px;
+  height: 35px;
+  border-radius: 3px;
+  border: solid 1px #e0e0e0;
+  background-color: #fafafa;
+}
+
+button{
+  width: 240px;
+  height: 35px;
+}
+
+.btn-primary{
+  background-color: #4266b2;
+  border-color: #2e6da4;
+}
+
+.forgetPart{
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  color: #9b9b9b;
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer{
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+  margin-top: 60px;
+  margin-top:30px;
+}
