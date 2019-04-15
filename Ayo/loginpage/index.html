@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Login Page Copy</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Login Page Copy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- blurred background -->
+    <div class="bg-image"></div>
     <div class="container">
+      <!-- upper section -->
       <div class="top">
         <div class="mainPic">
-          <img src="http://files.npac-ntt.org/ntt/files/201607/e23c5473-5351-4f68-9c99-3754a63ef1d3.jpg" alt="topPic" width="210" height="65">
+          <img src="http://files.npac-ntt.org/ntt/files/201607/e23c5473-5351-4f68-9c99-3754a63ef1d3.jpg" alt="topPic">
         </div>
         <div class="topic">
-          <p>節目排檔系統Hello</p>
+          <h1>節目排檔系統</h1>
         </div>
       </div>
-      <div class="formGroup">
-        <input type="text" name="account" placeholder="帳號" class="dataColumn">
-        <input type="password" name="password" placeholder="密碼" class="dataColumn">
+      <!-- alert message -->
+      <div class="alert">
+        <i class="fas fa-exclamation-circle"></i>
+        <div class="alertMessage">帳號或密碼錯誤，請重新輸入</div>
+      </div>
+      <!-- form -->
+      <form class="formGroup">
+        <input type="text" name="account" placeholder="帳號" class="dataColumn" id="account" required>
+        <input type="password" name="password" placeholder="密碼" class="dataColumn" id="password" required>
         <button type="button" name="defaultLogin" class="loginButton">登入</button>
         <button type="button" name="fbLogin" class="fbLoginButton">Facebook 登入</button>
-      </div>
+      </form>
+      <!-- user functions -->
       <div class="accountFunction">
         <div class="signin">
           <a href="#">申請帳號</a>
@@ -29,9 +45,12 @@
           <a href="#">忘記密碼?</a>
         </div>
       </div>
-      <div class="contact">
-        <span>客服電話：(02)8877-6655</span>
-      </div>
+      <!-- contact -->
+      <div class="contact">客服電話：(02)8877-6655</div>
     </div>
-  </body>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
