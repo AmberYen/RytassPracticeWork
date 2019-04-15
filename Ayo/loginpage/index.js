@@ -23,8 +23,8 @@
 
   // set alert functions
   function wrongAlert(accData, pwData) {
-    accountInput.classList.remove('wrongAlert');
-    passwordInput.classList.remove('wrongAlert');
+    removeWrongAlertClass(accountInput);
+    removeWrongAlertClass(passwordInput);
     if (accData !== userAccount || pwData !== userPassword) {
       alert.style.visibility = 'visible';
       if (accData !== userAccount && pwData !== userPassword) {
@@ -39,8 +39,12 @@
       alert.style.visibility = 'hidden';
     }
   }
-  // function of adding class
+  // functions of adding class and removing class
   function addWrongAlertClass(item) {
     item.classList.add('wrongAlert');
+  }
+
+  function removeWrongAlertClass(item) {
+    item.classList.remove('wrongAlert');
   }
 })();
