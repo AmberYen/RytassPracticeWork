@@ -2,41 +2,39 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>formPage</title>
+    <title>國家兩廳院|登入</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <script src="JS/loginPage.js"></script>
   </head>
-  <body>
+  <body class="login_page">
+
     <div class="bg"></div>
 
-      <div class=content>
+      <form class=content>
 
-          <div class="mainPic">
-            <img class="logo" src="http://files.npac-ntt.org/ntt/files/201607/e23c5473-5351-4f68-9c99-3754a63ef1d3.jpg" alt="mainPic">
-          </div>
+          <div class="mainPic"><img class="logo" src="http://files.npac-ntt.org/ntt/files/201607/e23c5473-5351-4f68-9c99-3754a63ef1d3.jpg" alt="mainPic"></div>
 
-          <div class="mainTopic">
-            <h1>節目排檔系統</h1>
-          </div>
+          <h1 class="mainTopic">節目排檔系統</h1>
 
-          <div class="formGroup">
-            <div><input type="text" id="account"></div>
-            <div><input type="password" id="password"></div>
-            <div><button type="button" class="btn btn-info">登入</button></div>
-            <button type="button" class="btn btn-primary">FaceBook登入</button>
+          <div class="typeIn">
+            <div><input type="text" name="account" placeholder="請輸入您的帳號" required></div>
+            <div><input type="password" name="password" placeholder="請輸入您的帳號" required></div>
+            <div><button type="submit" class="btn btn-info">登入</button></div>
+            <div><button type="button" class="btn btn-primary">FaceBook登入</button></div>
           </div>
 
           <div class="forgetPart">
-            <div>申請帳號</div>
+            <a href="#">申請帳號</a>
             <div>|</div>
-            <div>忘記密碼？</div>
+            <a href="#">忘記密碼？</a>
           </div>
 
-          <footer>
+          <div class="footer">
               <p>客服電話：(02)8877-6655</p>
-          </footer>
+          </div>
 
-      </div>
-
+      </form>
   </body>
+
 </html>

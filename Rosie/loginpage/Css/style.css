@@ -1,18 +1,13 @@
 body{
   width: 100vw;
-  height: 100vh;
-}
-
-.logo{
-  width: 300px;
+  /* height: 100vh;  */
 }
 
 .bg{
+  top: 0px;
   position: fixed;
-  background: #FFFFFF url(../Images/theater.jpeg) center no-repeat;
-              /* color image position repeat */
-  background-size: 1280px 700px;
-  background-attachment: fixed;
+  background: url(../Images/theater.jpeg) center center no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
   -webkit-filter: blur(15px);
@@ -22,62 +17,79 @@ body{
   filter: blur(15px);
 }
 
-.content{
+.login_page .content{
   position:relative;
   display: flex;
-  flex-flow: column wrap;
-            /* direction wrap */
+  flex-flow: column;
   padding: 50px 50px 10px 50px;
-  top: 85px;
+  margin: calc((100vh - 592.19px) / 2) auto;
   width: 420px;
-  height: 594px;
   background-color: #FFFFFF;
-  margin:0 auto;
   text-align:center;
 }
 
-h1{
+.content .logo{
+  width: 300px;
+}
+
+.content h1{
   font-size: 16px;
   letter-spacing: 1.2px;
   font-weight: normal;
   margin-bottom: 70px;
 }
 
-.formGroup {
+.content .typeIn {
   line-height: 50px;
 }
 
-input { /* 無法同時選取 .account, .passowrd */
+.typeIn .error{
+	position: absolute;
+	top: 227px;
+	left: 93px;
+	color: #FF0000;
+  font-size: 10px;
+}
+
+.typeIn input {
   width: 240px;
   height: 35px;
   border-radius: 3px;
+  font-size: 12px;
+  padding-left: 10px;
+  letter-spacing: 0.8px;
   border: solid 1px #e0e0e0;
   background-color: #fafafa;
 }
 
-button{
+
+.typeIn button{
   width: 240px;
   height: 35px;
 }
 
-.btn-primary{
+ .btn-primary{
   background-color: #4266b2;
   border-color: #2e6da4;
 }
 
-.forgetPart{
+.forgetPart {
   font-size: 13px;
   letter-spacing: 0.8px;
   color: #9b9b9b;
   margin: 20px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-footer{
+.forgetPart a{  /* 為何無法由上個code一起指定 */
+    color: #9b9b9b;
+}
+
+.footer{
   font-size: 12px;
   letter-spacing: 1px;
   color: #4a4a4a;
-  margin-top: 60px;
   margin-top:30px;
 }
