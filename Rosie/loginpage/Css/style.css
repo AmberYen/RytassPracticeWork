@@ -1,6 +1,6 @@
 body{
   width: 100vw;
-  /* height: 100vh;  */
+  height: 100vh;
 }
 
 .bg{
@@ -17,12 +17,20 @@ body{
   filter: blur(15px);
 }
 
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .login_page .content{
   position:relative;
   display: flex;
   flex-flow: column;
   padding: 50px 50px 10px 50px;
-  margin: calc((100vh - 592.19px) / 2) auto;
   width: 420px;
   background-color: #FFFFFF;
   text-align:center;
@@ -43,7 +51,7 @@ body{
   line-height: 50px;
 }
 
-.typeIn .error{
+.typeIn .error-info {
 	position: absolute;
 	top: 227px;
 	left: 93px;
@@ -62,6 +70,9 @@ body{
   background-color: #fafafa;
 }
 
+input.error{
+  border-color: #FF0000;
+}
 
 .typeIn button{
   width: 240px;
@@ -83,8 +94,8 @@ body{
   align-items: center;
 }
 
-.forgetPart a{  /* 為何無法由上個code一起指定 */
-    color: #9b9b9b;
+.forgetPart a{
+  color: #9b9b9b;
 }
 
 .footer{
