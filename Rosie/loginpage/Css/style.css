@@ -1,0 +1,106 @@
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg{
+  top: 0px;
+  position: fixed;
+  background: url(../Images/theater.jpeg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.login_page .content{
+  position:relative;
+  display: flex;
+  flex-flow: column;
+  padding: 50px 50px 10px 50px;
+  width: 420px;
+  background-color: #FFFFFF;
+  text-align:center;
+}
+
+.content .logo{
+  width: 300px;
+}
+
+.content h1{
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  font-weight: normal;
+  margin-bottom: 70px;
+}
+
+.content .typeIn {
+  line-height: 50px;
+}
+
+.typeIn .error-info {
+	position: absolute;
+	top: 227px;
+	left: 93px;
+	color: #FF0000;
+  font-size: 10px;
+}
+
+.typeIn input {
+  width: 240px;
+  height: 35px;
+  border-radius: 3px;
+  font-size: 12px;
+  padding-left: 10px;
+  letter-spacing: 0.8px;
+  border: solid 1px #e0e0e0;
+  background-color: #fafafa;
+}
+
+input.error{
+  border-color: #FF0000;
+}
+
+.typeIn button{
+  width: 240px;
+  height: 35px;
+}
+
+ .btn-primary{
+  background-color: #4266b2;
+  border-color: #2e6da4;
+}
+
+.forgetPart {
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  color: #9b9b9b;
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.forgetPart a{
+  color: #9b9b9b;
+}
+
+.footer{
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+  margin-top:30px;
+}
